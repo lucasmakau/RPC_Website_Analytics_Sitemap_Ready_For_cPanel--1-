@@ -1,0 +1,7 @@
+RPC V16 amendments
+
+1. Contact form: retained AJAX FormSubmit delivery and added a normal FormSubmit POST fallback through a hidden iframe for browsers/mobile environments that block the AJAX/CORS request. Visitor remains on the page.
+2. Giving: added KCB Bank, Machakos Branch — Paybill 522533; Account 8145297; Account Name Rock Priesthood Church. Universal Traders Sacco details were subsequently removed; KCB Bank details are the retained giving option.
+3. Gallery: added supplied Core Values image as assets/gallery/core-values.jpg and linked it in gallery.html.
+4. Social media: replaced separate Facebook/TikTok/YouTube placeholders with one Social Media button/menu containing the official Facebook, TikTok and YouTube links supplied by the church.
+5. Removed inactive social placeholder behavior from script.js.

@@ -1,0 +1,13 @@
+RPC WEBSITE V14 — FOOTER & TYPOGRAPHY AMENDMENTS
+
+1. Removed the logo/icon from the footer on all public pages.
+2. Re-arranged the footer into three clean columns: church identity/address, Explore, and Connect.
+3. Kept the footer address centered and removed the previous icon-dependent layout.
+4. Removed “Coming Soon” from TikTok and YouTube everywhere those placeholders appear.
+5. TikTok and YouTube remain inactive placeholders until official account URLs are supplied.
+6. Unified the website typography around Edmondsans.
+   - Edmondsans Regular (font-weight 400) is defined and used for normal body/interface text.
+   - Edmondsans Bold (font-weight 700) is defined and used for headings, titles and designated bold labels.
+   - Previous Georgia/Montserrat/Gabriola/Arial text-face exceptions were overridden/replaced in the site stylesheet.
+   - Font Awesome icon elements retain their icon font.
+7. Branches-page “Coming Soon” wording remains because it is unrelated to the TikTok/YouTube placeholders.

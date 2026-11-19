@@ -1,0 +1,13 @@
+RPC Website v13 — Owner Amendments
+
+- Homepage map removed; Map button now links to contact.html where the map remains.
+- Homepage ministry cards made compact and centred.
+- Order of Services and Mid-Week Meetings added exactly from the supplied church artwork.
+- Ministry Gallery sections removed from individual ministry pages; one clean profile image retained at the start of each ministry.
+- Normal copy no longer uses automatic hyphenation; responsive wrapping uses normal word boundaries.
+- TikTok and YouTube placeholders added until official accounts are supplied.
+- Contact page rebuilt with responsive details, map and AJAX contact/prayer form using FormSubmit.
+- Edmondsans Regular for body text and Edmondsans Bold for headings/titles, with system fallbacks.
+- Footer rebuilt as three responsive columns with split church title/motto and corrected logo alignment.
+- Pastoral/Deacons blocks use responsive equal columns on desktop and vertical stacking on mobile.
+- RPC logo borders/outlines/shadows removed globally.

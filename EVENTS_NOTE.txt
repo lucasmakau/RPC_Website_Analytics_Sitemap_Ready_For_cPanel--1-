@@ -1,0 +1,5 @@
+RPC EVENT MANAGEMENT
+The event management area is password protected for the client-review build.
+Password: 27759881
+
+Important: because this version is a static website, events are saved in the browser used to add them. A production version should use secure server-side authentication and a database so events are shared across devices.

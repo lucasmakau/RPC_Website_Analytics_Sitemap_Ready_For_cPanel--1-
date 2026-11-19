@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head>
+<!-- Google Analytics 4 (Rock Priesthood Church) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2XXBG0WQ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D2XXBG0WQ8');
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RPC Events Management</title><meta name="description" content="Authorised event management for Rock Priesthood Church.">
+<link rel="stylesheet" href="style.css?v=20260926-owner-v13"><link rel="icon" href="assets/rpc-favicon.png" type="image/png"><link rel="apple-touch-icon" href="assets/rpc-touch-icon.png"><meta name="theme-color" content="#0072BD"></head><body>
+<div class="admin-wrap"><div class="admin-head"><a href="events.html">← Back to Events</a><h1>RPC Events Management</h1><p>Authorised access for publishing and removing church events.</p></div>
+<div id="adminLocked" class="admin-panel auth-panel"><div class="auth-lock">🔒</div><h2>Authorisation required</h2><p>Enter the events management password to continue.</p><form id="authForm"><input id="adminPassword" type="password" autocomplete="current-password" placeholder="Password" required><button class="btn btn-blue" type="submit">Continue</button></form><p id="authStatus" class="auth-status"></p></div>
+<div id="adminContent" class="admin-grid" hidden>
+<section class="admin-panel"><h2>Add Event</h2><form id="eventForm"><label for="title">Event title</label><input id="title" required><label for="date">Date</label><input id="date" type="date" required><label for="time">Time</label><input id="time" placeholder="e.g. 10:00 AM"><label for="location">Location</label><input id="location" placeholder="Mikuyu, Machakos"><label for="description">Description</label><textarea id="description" placeholder="Short event description"></textarea><label for="flyer">Flyer</label><input id="flyer" type="file" accept="image/*" required><p><button class="btn btn-red" type="submit">Publish Event</button></p></form><p id="status"></p></section>
+<section class="admin-panel"><h2>Published Events</h2><div id="adminEventList"></div><p style="margin-top:20px"><a class="btn btn-blue" href="events.html">View Events Page</a></p></section>
+</div>
+</div><script src="script.js?v=20260912-ministry-all"></script><a class="rpc-whatsapp" href="https://wa.me/254700147147" target="_blank" rel="noopener" aria-label="Chat with Rock Priesthood Church on WhatsApp">WA<span>WhatsApp RPC</span></a></body></html>

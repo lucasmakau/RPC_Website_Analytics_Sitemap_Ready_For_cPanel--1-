@@ -1,0 +1,14 @@
+RPC HOSTING FIX
+
+This package includes: 
+1. Cache-busted style.css and script.js references.
+2. A robust leadership grid width fix for the About page.
+3. All original website files and ministry photos.
+
+IMPORTANT cPanel upload:
+- Extract the ZIP on your computer.
+- Upload/overwrite ALL files in public_html (or the document root), including style.css and script.js.
+- Keep the assets/ folder and its subfolders intact.
+- Do not upload the ZIP itself as the live site.
+- After uploading, use Ctrl+F5 in Chrome.
+- If your hosting has a cache option, purge/clear it.

@@ -1,0 +1,10 @@
+RPC CLIENT REVIEW - SAME NETWORK
+
+1. Open this folder in VS Code (the folder containing index.html).
+2. Install/enable Live Server.
+3. Right-click index.html -> Open with Live Server.
+4. The PC should be reachable from another device on the same Wi-Fi/LAN using:
+   http://YOUR-PC-IP:5500/index.html
+5. Find YOUR-PC-IP with: ipconfig
+   Use the IPv4 address of the active Wi-Fi/Ethernet adapter, NOT 127.0.0.1 and normally not a VirtualBox/VMware adapter such as 192.168.56.1.
+6. If Windows Firewall asks, allow Node.js/Live Server on Private networks.

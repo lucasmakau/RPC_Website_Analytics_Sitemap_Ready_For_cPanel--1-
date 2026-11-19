@@ -1,0 +1,1072 @@
+
+:root{--blue:#0072BC;--blue-dark:#073B5C;--red:#D7192D;--ink:#17232D;--muted:#65747F;--paper:#fff;--soft:#F4F7FA;--line:#D7E0E6;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(var(--max),calc(100% - 44px));margin:auto}.narrow{max-width:760px;margin-left:auto;margin-right:auto}.center-content{text-align:center}
+.topbar{background:var(--blue-dark);color:#fff;font-size:12px}.topbar .container{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{display:flex;align-items:center;gap:12px;min-width:235px}.logo img{width:58px;height:58px;object-fit:contain}.logo-title{font-size:15px;font-weight:800;letter-spacing:.04em}.logo-title span{color:var(--red)}.logo-sub{display:block;font-size:9px;color:var(--muted);letter-spacing:.13em;margin-top:2px;text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:0;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.025em}.navlinks>a,.navdrop>button{padding:31px 9px;border:0;background:none;font-size:12px;font-weight:800;text-transform:uppercase;cursor:pointer}.navlinks>a:hover,.navdrop:hover>button,.navlinks .current{color:var(--blue)}.navdrop{position:relative}.navdrop .menu-drop{display:none;position:absolute;left:0;top:78px;background:#fff;border:1px solid var(--line);min-width:180px;box-shadow:0 12px 24px rgba(0,0,0,.08)}.navdrop:hover .menu-drop,.navdrop:focus-within .menu-drop{display:block}.menu-drop a{display:block;padding:12px 15px;font-size:12px;font-weight:700}.menu-drop a:hover{background:var(--soft);color:var(--blue)}.nav-cta{background:var(--red)!important;color:#fff!important;padding:11px 16px!important;margin-left:7px}.mobile-toggle{display:none;background:none;border:0;font-size:25px}.mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 20px 18px;background:#fff}.mobile-menu a,.mobile-menu summary{display:block;padding:9px 0;font-weight:800;font-size:13px}.mobile-menu details a{padding-left:18px;color:var(--muted)}
+.hero{position:relative;height:650px;overflow:hidden;background:#071827;color:#fff}.slides,.hero-slide{position:absolute;inset:0}.hero-slide{opacity:0;transition:opacity 1.2s ease}.hero-slide.active{opacity:1}.hero-slide img{width:100%;height:100%;object-fit:cover}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,22,37,.76),rgba(3,22,37,.36) 60%,rgba(3,22,37,.18))}.hero-content{position:relative;z-index:2;height:100%;display:flex;align-items:center;justify-content:center;text-align:center}.hero-copy{max-width:760px;padding-top:10px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:#e6f1f9}.eyebrow:after{content:"";display:block;width:38px;height:2px;background:var(--red);margin:13px auto}.hero h1{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:clamp(44px,6vw,74px);line-height:1.05;font-weight:400;margin:12px 0}.hero p{font-size:18px;margin:0 auto 28px;color:#f2f7fb}.buttons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid transparent;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;transition:.2s}.btn:hover{transform:translateY(-1px)}.btn-blue{background:var(--blue);color:#fff}.btn-red{background:var(--red);color:#fff}.btn-white{background:#fff;color:var(--ink)}.btn-outline{border-color:rgba(255,255,255,.75);color:#fff}.hero-controls{position:absolute;z-index:3;bottom:28px;left:0;right:0;display:flex;justify-content:center;gap:7px}.hero-dot{width:8px;height:8px;border:0;background:rgba(255,255,255,.55);border-radius:50%;padding:0}.hero-dot.active{background:#fff;width:28px;border-radius:6px}
+.page-hero{background:var(--blue-dark);color:#fff;padding:76px 0 68px;border-bottom:5px solid var(--red)}.page-hero h1{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:clamp(42px,5vw,62px);font-weight:400;margin:8px 0 12px}.page-hero p{max-width:760px;margin:0 auto;color:#dce8f1}.section{padding:76px 0}.section-soft{background:var(--soft)}.section-blue{background:#EEF5FA}.section-dark{background:var(--blue-dark);color:#fff}.section-red{background:var(--red);color:#fff}.kicker{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px}.kicker.light{color:#d9eaf6}.section h2{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:clamp(32px,4vw,48px);font-weight:400;line-height:1.12;margin:0 0 16px}.section h3{margin:7px 0;font-size:21px;line-height:1.25}.lead{font-size:17px;color:var(--muted);margin:0 auto 25px}.light-text{color:#d8e5ed}.welcome-section{padding-top:88px;padding-bottom:88px}.values{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);background:#fff;max-width:980px;margin:34px auto 0}.value{padding:23px 14px;text-align:center;border-right:1px solid var(--line)}.value:last-child{border-right:0}.value b{display:block;font-size:28px;color:var(--blue)}.value span{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.department-links{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.dept{position:relative;min-height:360px;overflow:hidden;background:#122433;color:#fff;text-align:center}.dept img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.dept:hover img{transform:scale(1.025)}.dept:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,19,30,.88),rgba(4,19,30,.08) 70%)}.dept-body{position:absolute;z-index:2;left:18px;right:18px;bottom:22px}.dept-body h3{font-size:29px;margin:4px 0}.dept-body span,.dept-body em{display:block;font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.12em;color:#dceaf3;font-style:normal}.dept-body em{color:#fff;margin-top:9px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.department-intro>div{text-align:center}.image-frame{border:1px solid var(--line);overflow:hidden;background:#eee}.image-large{height:420px}.image-large img{width:100%;height:100%;object-fit:cover}.plain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1050px;margin:32px auto 0}.number-card,.plain-card{border:1px solid var(--line);background:#fff;padding:28px}.number-card .num,.role{font-size:11px;color:var(--red);font-weight:800;letter-spacing:.12em;text-transform:uppercase}.number-card p,.plain-card p{color:var(--muted)}
+.leadership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px;text-align:center}.leader-card{border:1px solid var(--line);background:#fff;overflow:hidden}.leader-image{height:390px;background:#eef2f4;overflow:hidden}.leader-image img{width:100%;height:100%;object-fit:cover}.leader-full img{object-fit:contain;background:#fff}.leader-card .body{padding:24px}.leader-card p{color:var(--muted);font-size:15px}.journey-wrap{max-width:980px}.timeline{position:relative;max-width:900px;margin:35px auto 0;padding:5px 0}.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:#c8d5de}.milestone{position:relative;width:50%;padding:0 42px 48px}.milestone:nth-child(odd){margin-right:auto;text-align:right}.milestone:nth-child(even){margin-left:auto;text-align:left}.milestone:before{content:"";position:absolute;top:4px;width:13px;height:13px;background:#fff;border:4px solid var(--blue);z-index:2}.milestone:nth-child(odd):before{right:-7px}.milestone:nth-child(even):before{left:-7px}.milestone .year{font-size:11px;color:var(--red);font-weight:800;letter-spacing:.14em;text-transform:uppercase}.milestone h3{font-size:25px}.milestone p{color:var(--muted)}.journey-photo{height:300px;margin-top:17px;border:1px solid var(--line);overflow:hidden}.journey-photo img{width:100%;height:100%;object-fit:cover}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-item{display:block;overflow:hidden;border:1px solid var(--line);background:#eee;cursor:zoom-in}.gallery-item:nth-child(1),.gallery-item:nth-child(6){grid-column:span 2}.gallery img{width:100%;height:200px;object-fit:cover;transition:transform .35s}.gallery-item:hover img{transform:scale(1.03)}.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:500;align-items:center;justify-content:center;padding:50px}.lightbox.open{display:flex}.lightbox img{max-width:min(94vw,1200px);max-height:84vh;width:auto;height:auto;object-fit:contain}.lightbox-close{position:absolute;top:15px;right:24px;border:0;background:none;color:#fff;font-size:42px;cursor:pointer;line-height:1}.lightbox-caption{position:absolute;bottom:15px;left:0;right:0;text-align:center;color:#fff;font-size:13px}
+.event-list{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.event{border:1px solid var(--line);background:#fff}.event img{width:100%;height:300px;object-fit:cover}.event-body{padding:20px;text-align:center}.event-date{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.empty{border:1px dashed #aebdca;padding:45px;text-align:center;background:#fff}.live-panel{border:1px solid #1d415b;background:#071827;padding:12px;max-width:980px;margin:auto}.live-screen{min-height:440px;background:#0d2638;display:flex;align-items:center;justify-content:center;text-align:center}.live-icon{width:70px;height:70px;background:var(--red);color:#fff;display:grid;place-items:center;margin:0 auto 18px;font-size:26px;border-radius:50%}.facebook-box{margin:22px auto 0;border-top:3px solid var(--red);padding:18px 20px;background:#fff;color:var(--ink);max-width:720px}.payment{border:1px solid var(--line);background:#fff;max-width:650px;margin:25px auto}.payment-inline{color:var(--ink)}.payrow{display:flex;justify-content:space-between;gap:25px;padding:19px 24px;border-bottom:1px solid var(--line)}.payrow:last-child{border-bottom:0}.payrow span{font-size:11px;color:var(--muted);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.payrow b{font-size:18px}.map-wrap{border:1px solid var(--line);height:430px;background:#e9eef2;max-width:1100px;margin:28px auto 0}.map-wrap iframe{width:100%;height:100%;border:0}.coordinates{font-size:12px;color:var(--muted);margin-top:10px}.contact-list{max-width:700px;margin:30px auto;border-top:1px solid var(--line)}.contact-item{padding:18px 0;border-bottom:1px solid var(--line)}.contact-item small{display:block;color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.footer{background:#061521;color:#dbe5eb;padding:55px 0 22px;text-align:center}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}.footer h3{color:#fff;font-size:18px;margin:0 0 14px}.footer p{margin:7px 0;color:#b7c5cd}.footer a:hover{color:#fff}.footer-logo{display:flex;gap:12px;align-items:center;justify-content:center}.footer-logo img{width:58px;height:58px;object-fit:contain}.copyright{display:flex;justify-content:space-between;border-top:1px solid #234050;margin-top:40px;padding-top:18px;font-size:11px;color:#91a4af}.admin-wrap{width:min(1050px,calc(100% - 32px));margin:35px auto}.admin-head{background:var(--blue-dark);color:#fff;padding:28px;text-align:center}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}.admin-panel{background:#fff;border:1px solid var(--line);padding:24px}.admin-panel label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:14px 0 6px}.admin-panel input,.admin-panel textarea{width:100%;padding:11px;border:1px solid #c7d3dc;font:inherit}.admin-panel textarea{min-height:100px}.admin-event{display:grid;grid-template-columns:100px 1fr auto;gap:15px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.admin-event img{width:100px;height:75px;object-fit:cover}.admin-note{background:#eef5fa;border-left:4px solid var(--blue);padding:12px 15px;font-size:13px}.admin-danger{background:#fff3f4;border-left:4px solid var(--red);padding:12px 15px;font-size:13px}
+@media(max-width:1100px){.navlinks{display:none}.mobile-toggle{display:block}.mobile-menu.open{display:block}.values{grid-template-columns:repeat(3,1fr)}.value:nth-child(3){border-right:0}.value:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.container{width:min(var(--max),calc(100% - 28px))}.topbar .container{flex-direction:column;align-items:center;padding:7px 0}.hero{height:590px}.hero h1{font-size:46px}.hero p{font-size:16px}.split,.plain-grid,.department-links,.event-list,.admin-grid,.footer-grid,.leadership-grid{grid-template-columns:1fr}.section{padding:58px 0}.values{grid-template-columns:1fr 1fr}.value{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)}.value:nth-child(2n){border-right:0!important}.gallery{grid-template-columns:1fr 1fr}.gallery-item:nth-child(1),.gallery-item:nth-child(6){grid-column:span 2}.gallery img{height:160px}.image-large{height:330px}.page-hero{padding:62px 0}.payrow{flex-direction:column;gap:5px;align-items:center}.map-wrap{height:350px}.timeline:before{left:12px}.milestone,.milestone:nth-child(odd),.milestone:nth-child(even){width:100%;margin:0;text-align:center;padding:0 0 45px 35px}.milestone:before,.milestone:nth-child(odd):before,.milestone:nth-child(even):before{left:5px;right:auto}.journey-photo{height:260px}.leader-image{height:430px}.logo{min-width:0}.logo img{width:50px;height:50px}.lightbox{padding:30px 12px}.lightbox img{max-height:78vh}}
+@media(max-width:480px){.values{grid-template-columns:1fr}.value{border-right:0!important}.gallery{grid-template-columns:1fr}.gallery-item:nth-child(1),.gallery-item:nth-child(6){grid-column:span 1}.hero h1{font-size:40px}.buttons .btn{width:100%}}
+
+
+/* RPC revision: cleaner, centred presentation and faithful brand colours */
+.logo-title{white-space:nowrap}
+.brand-blue{color:var(--blue)!important}
+.brand-red{color:var(--red)!important}
+.nav-live{position:relative;color:var(--red)!important;font-weight:900!important}
+.live-dot{display:inline-block;width:7px;height:7px;background:var(--red);border-radius:50%;margin-right:5px;vertical-align:1px;box-shadow:0 0 0 3px rgba(215,25,45,.12)}
+
+/* Keep faces visible in the hero photographs. The source images have more vertical content than the hero frame. */
+.hero-slide img{object-position:center top}
+.hero-content{align-items:center}
+.hero-copy{text-align:center;margin-inline:auto}
+
+/* Centre the content across inner pages and reduce long left-aligned blocks. */
+main{text-align:center}
+main .container{text-align:center}
+.page-hero .container{max-width:900px}
+.page-hero p{margin-left:auto;margin-right:auto}
+.split>div:last-child{text-align:center}
+.plain-grid,.leadership-grid,.department-links,.event-list{margin-left:auto;margin-right:auto}
+.number-card,.plain-card,.leader-card,.event-body{text-align:center}
+.footer{text-align:center}
+.footer-grid{justify-items:center}
+.footer-logo{justify-content:center}
+
+/* Journey: centered milestones with readable justified story paragraphs. */
+.journey-wrap{margin-left:auto;margin-right:auto}
+.timeline{max-width:980px}
+.milestone,.milestone:nth-child(odd),.milestone:nth-child(even){text-align:center}
+.milestone p{max-width:680px;margin-left:auto;margin-right:auto;text-align:justify;text-justify:inter-word}
+.milestone h3,.milestone .year{text-align:center}
+
+/* The homepage department grid can comfortably accommodate four departments. */
+.department-links{grid-template-columns:repeat(4,1fr)}
+.dept{min-height:330px}
+
+/* Live page */
+.live-panel{position:relative}
+.live-panel:before{content:"";display:block;width:9px;height:9px;background:var(--red);border-radius:50%;position:absolute;top:22px;right:22px;box-shadow:0 0 0 5px rgba(215,25,45,.14)}
+.live-icon{position:relative}
+.live-icon:before{content:"";position:absolute;inset:-8px;border:2px solid rgba(215,25,45,.45);border-radius:50%}
+
+/* More conventional image framing on the leadership page. */
+.leader-image img{object-position:center top}
+.leader-full img{object-fit:contain;object-position:center center}
+
+@media (max-width:1050px){
+  .navlinks>a,.navdrop>button{padding-left:6px;padding-right:6px;font-size:11px}
+  .department-links{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .logo-title{font-size:13px}
+  .logo-sub{font-size:8px}
+  .hero{height:560px}
+  .hero-slide img{object-position:center top}
+  .department-links{grid-template-columns:1fr}
+  .milestone,.milestone:nth-child(odd),.milestone:nth-child(even){width:100%;padding:0 8px 42px;margin:0;text-align:center}
+  .timeline:before{left:50%}
+  .milestone:before,.milestone:nth-child(odd):before,.milestone:nth-child(even):before{left:calc(50% - 6px);right:auto}
+  .milestone p{text-align:justify}
+}
+
+
+/* ==========================================================
+   RPC DEVICE COMPATIBILITY PASS
+   Designed for phones, tablets, laptops and wide screens.
+   ========================================================== */
+html,body{max-width:100%;overflow-x:hidden}
+button,a{touch-action:manipulation}
+.hero-slide:first-child img{object-position:center bottom}
+.hero-slide img{object-fit:cover}
+
+/* Keep text readable without allowing long words/URLs to break layouts. */
+h1,h2,h3,p{overflow-wrap:anywhere}
+.navlinks a,.navdrop>button,.nav-live,.nav-cta,.logo-title,.logo-sub{overflow-wrap:normal;word-break:normal;white-space:nowrap}
+
+@media (max-width:1100px){
+  .container{width:min(100% - 32px,var(--max))}
+  .nav{min-height:72px}
+  .logo{gap:9px}
+  .logo img{width:52px;height:52px}
+  .logo-title{font-size:13px}
+  .logo-sub{font-size:8px}
+  .mobile-toggle{width:46px;height:46px;display:grid;place-items:center;font-size:25px;line-height:1}
+}
+
+@media (max-width:760px){
+  .container{width:calc(100% - 28px)}
+  .topbar{font-size:11px}
+  .topbar .container{gap:2px;text-align:center}
+  .header{position:sticky;top:0}
+  .nav{min-height:68px;gap:8px}
+  .logo{min-width:0;max-width:calc(100% - 54px)}
+  .logo img{width:46px;height:46px;flex:0 0 46px}
+  .logo-title{font-size:11.5px;line-height:1.15;letter-spacing:.025em;white-space:normal}
+  .logo-sub{font-size:7px;line-height:1.2;letter-spacing:.08em;margin-top:3px}
+  .mobile-menu{padding:10px 0 16px;max-height:calc(100vh - 68px);overflow:auto}
+  .mobile-menu .container{width:calc(100% - 28px)}
+  .mobile-menu a,.mobile-menu summary{padding:11px 0;font-size:13px}
+  .mobile-menu details a{padding-left:18px}
+
+  .hero{height:540px;min-height:540px}
+  .hero-content{padding:0 6px}
+  .hero-copy{max-width:620px;padding:0}
+  .hero h1{font-size:clamp(34px,10vw,46px);line-height:1.08;margin:10px 0 12px}
+  .hero p{font-size:15px;line-height:1.55;margin-bottom:22px}
+  .eyebrow{font-size:9px;letter-spacing:.13em}
+  .buttons{width:100%;gap:9px}
+  .buttons .btn{width:min(100%,280px);min-height:46px}
+  .hero-controls{bottom:18px}
+
+  .page-hero{padding:52px 0 46px}
+  .page-hero h1{font-size:clamp(34px,9vw,48px)}
+  .page-hero p{font-size:15px;line-height:1.6}
+  .section{padding:54px 0}
+  .welcome-section{padding-top:60px;padding-bottom:60px}
+  .section h2{font-size:clamp(30px,8vw,42px)}
+  .lead{font-size:16px;line-height:1.7}
+
+  .values{width:100%;grid-template-columns:1fr 1fr;margin-top:25px}
+  .value{min-height:88px;padding:19px 10px}
+  .value b{font-size:24px}
+  .value span{font-size:10px}
+
+  .department-links{grid-template-columns:1fr;gap:14px;margin-top:25px}
+  .dept{min-height:280px}
+  .dept-body h3{font-size:26px}
+
+  .split{gap:28px}
+  .image-large{height:auto;aspect-ratio:4/3}
+  .plain-grid,.leadership-grid,.event-list,.admin-grid{grid-template-columns:1fr;gap:16px}
+  .plain-grid{margin-top:24px}
+  .number-card,.plain-card{padding:22px}
+  .leader-image{height:auto;aspect-ratio:4/5}
+  .leader-card .body{padding:20px}
+  .leader-card p{font-size:15px;line-height:1.7}
+
+  .timeline{padding-top:3px}
+  .timeline:before{left:12px}
+  .milestone,.milestone:nth-child(odd),.milestone:nth-child(even){width:100%;margin:0;padding:0 0 42px 38px;text-align:left}
+  .milestone:before,.milestone:nth-child(odd):before,.milestone:nth-child(even):before{left:5px;right:auto}
+  .milestone h3,.milestone .year{text-align:left}
+  .milestone p{max-width:none;text-align:justify;line-height:1.75}
+  .journey-photo{height:auto;aspect-ratio:16/10}
+
+  .gallery{grid-template-columns:1fr 1fr;gap:9px}
+  .gallery-item:nth-child(1),.gallery-item:nth-child(6){grid-column:span 2}
+  .gallery img{height:auto;aspect-ratio:1/1;object-fit:cover}
+  .lightbox{padding:18px 10px}
+  .lightbox img{max-width:96vw;max-height:78vh}
+  .lightbox-close{top:7px;right:12px;font-size:36px;padding:8px}
+  .lightbox-caption{bottom:8px;padding:0 12px}
+
+  .event img{height:auto;aspect-ratio:16/10;object-fit:cover}
+  .empty{padding:30px 18px}
+  .live-panel{padding:8px}
+  .live-screen{min-height:300px;padding:25px 15px}
+  .live-panel:before{top:17px;right:17px}
+  .facebook-box{padding:16px}
+
+  .payment{width:100%}
+  .payrow{padding:17px 15px;text-align:center}
+  .payrow b{font-size:17px}
+  .map-wrap{height:320px;margin-top:22px}
+  .coordinates{font-size:11px;word-break:break-all}
+
+  .footer{padding:45px 0 20px}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .copyright{flex-direction:column;gap:7px;text-align:center;align-items:center}
+  .admin-wrap{width:calc(100% - 24px)}
+  .admin-panel{padding:18px}
+  .admin-event{grid-template-columns:70px 1fr;align-items:start}
+  .admin-event img{width:70px;height:60px}
+  .admin-event button{grid-column:1/-1;width:100%}
+}
+
+@media (max-width:480px){
+  .container{width:calc(100% - 24px)}
+  .logo img{width:42px;height:42px;flex-basis:42px}
+  .logo-title{font-size:10.5px}
+  .logo-sub{font-size:6.5px}
+  .mobile-toggle{width:42px;height:42px;font-size:23px}
+  .hero{height:500px;min-height:500px}
+  .hero h1{font-size:34px}
+  .hero p{font-size:14px}
+  .buttons .btn{width:100%}
+  .hero-controls{bottom:14px}
+  .page-hero{padding:45px 0 40px}
+  .section{padding:48px 0}
+  .section h2{font-size:30px}
+  .lead{font-size:15px}
+  .values{grid-template-columns:1fr}
+  .value{border-right:0!important}
+  .gallery{grid-template-columns:1fr}
+  .gallery-item:nth-child(1),.gallery-item:nth-child(6){grid-column:span 1}
+  .gallery img{aspect-ratio:4/3}
+  .map-wrap{height:280px}
+  .milestone{padding-left:32px!important}
+}
+
+@media (max-width:360px){
+  .logo-title{font-size:9.5px}
+  .logo-sub{display:none}
+  .hero{height:480px;min-height:480px}
+  .hero h1{font-size:31px}
+  .hero p{font-size:13px}
+  .eyebrow{font-size:8px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-slide{transition:none}
+  .dept img,.btn,.gallery img{transition:none}
+}
+
+
+/* The first aerial photograph needs breathing room for the church building.
+   Keep the text centered horizontally but place it higher over the open sky. */
+.hero.aerial-active .hero-content{align-items:flex-start;padding-top:92px}
+@media(max-width:760px){.hero.aerial-active .hero-content{padding-top:58px}}
+@media(max-width:480px){.hero.aerial-active .hero-content{padding-top:46px}}
+
+
+/* ==========================================================
+   RPC NAVIGATION POLISH
+   Keep desktop navigation compact, readable and unbroken.
+   ========================================================== */
+@media (min-width:1101px){
+  .nav{gap:14px}
+  .logo{min-width:238px;flex:0 0 238px}
+  .navlinks{flex:1;justify-content:flex-end;min-width:0}
+  .navlinks>a,.navdrop>button{padding-left:7px;padding-right:7px;font-size:11px;letter-spacing:.015em;white-space:nowrap}
+  .navdrop>button{white-space:nowrap}
+  .nav-cta{margin-left:4px;padding-left:14px!important;padding-right:14px!important}
+  .nav-live{position:relative;color:var(--red)}
+  .live-dot{display:inline-block;width:7px;height:7px;background:var(--red);border-radius:50%;margin-right:6px;vertical-align:1px;box-shadow:0 0 0 3px rgba(215,25,45,.10)}
+}
+
+/* The aerial photograph contains the church in the lower-middle portion.
+   Frame it there instead of centering on the open landscape. */
+.hero-slide:first-child img{object-position:center 78%}
+@media (max-width:760px){
+  .hero-slide:first-child img{object-position:center 76%}
+  .navlinks a,.navdrop>button{white-space:nowrap}
+}
+@media (max-width:480px){
+  .hero-slide:first-child img{object-position:center 74%}
+}
+
+
+/* ==========================================================
+   RPC BRAND & CONTENT REFINEMENT — SEPTEMBER 2026
+   Official supplied brand colours:
+   Signal Blue #0072BD · RPC Red #EC1C24
+   ========================================================== */
+:root{
+  --blue:#0072BD;
+  --blue-dark:#063B5B;
+  --red:#EC1C24;
+  --ink:#17232D;
+  --muted:#65747F;
+  --line:#D7E0E6;
+  --soft:#F4F7FA;
+  --max:1180px;
+}
+body{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;color:var(--ink)}
+.logo-title{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-weight:700}
+.logo-sub{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;text-transform:none;letter-spacing:.03em;font-size:14px;color:var(--blue);font-weight:400}
+.brand-blue{color:#0072BD!important}.brand-red{color:#EC1C24!important}
+
+/* Permanent site navigation */
+.header{position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.nav{min-height:78px}
+.navlinks>a,.navdrop>button{white-space:nowrap;word-break:normal;overflow-wrap:normal}
+.navdrop .menu-drop{z-index:1100}
+.navdrop .menu-drop a{white-space:normal}
+.nav-live{display:inline-flex!important;align-items:center;gap:5px}
+.live-dot{width:8px;height:8px!important;background:#EC1C24!important;border-radius:50%;display:inline-block;box-shadow:0 0 0 4px rgba(236,28,36,.12)}
+
+/* Consistent centered page presentation */
+main .container{text-align:center}
+.narrow-content{max-width:850px;margin-inline:auto}
+.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}
+.leadership-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;max-width:1020px;margin-inline:auto}
+.leadership-two .leader-card{height:100%}
+.leader-image{height:470px}
+.leader-image img{object-fit:cover;object-position:center top}
+.leader-card .body{text-align:center}
+.leader-card p,.justified{text-align:justify;text-justify:inter-word;hyphens:none}
+.plain-card{text-align:center}
+.scripture-card{max-width:720px;margin:26px auto 0;padding:26px;border-left:4px solid var(--red);background:#fff}
+.scripture-card p{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:19px;margin:7px auto;font-weight:400}
+.governance{max-width:880px;margin:34px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative}
+.gov-step{background:#fff;border:1px solid var(--line);padding:24px 14px;min-height:125px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;position:relative}
+.gov-step:not(:last-child):after{content:"→";position:absolute;right:-16px;color:var(--red);font-size:20px;font-weight:800;z-index:2}
+.gov-step span{font-size:11px;color:var(--red);font-weight:800;letter-spacing:.15em}
+.gov-step b{font-size:14px;line-height:1.4}
+
+/* Ministry pages */
+.ministry-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:55px;align-items:center;max-width:1050px;margin-inline:auto}
+.ministry-intro .image-frame{height:480px}
+.ministry-intro .image-frame img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.ministry-quote{max-width:720px;margin:20px auto;padding:20px 24px;border-left:4px solid var(--red);background:var(--soft);font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:18px;line-height:1.55;text-align:center;font-weight:400}
+.ministry-points{max-width:1000px}
+.ministry-points .plain-card{height:100%}
+.ministry-closing{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:22px;color:var(--blue);margin:30px auto 0;font-weight:700}
+.ministry-gallery{max-width:1000px;margin:30px auto 0}
+
+/* Homepage ministries */
+.ministry-links{grid-template-columns:repeat(4,1fr)}
+.ministry-links .dept{min-height:320px}
+
+/* Cinematic hero transition */
+.hero-slide{z-index:0;will-change:opacity}
+.hero-slide img{will-change:transform;transform:scale(1.04);transition:transform 7s cubic-bezier(.2,.7,.2,1)}
+.hero-slide.active img{transform:scale(1.11)}
+@keyframes rpcHeroDrift{
+  0%{transform:scale(1.05) translate3d(0,0,0)}
+  100%{transform:scale(1.12) translate3d(-1%, -1%, 0)}
+}
+.hero-slide.active img{animation:rpcHeroDrift 7s ease-out both}
+.hero-slide:nth-child(even).active img{animation-name:rpcHeroDriftReverse}
+@keyframes rpcHeroDriftReverse{
+  0%{transform:scale(1.05) translate3d(0,0,0)}
+  100%{transform:scale(1.12) translate3d(1%, -1%, 0)}
+}
+.hero-shade{background:linear-gradient(90deg,rgba(3,22,37,.68),rgba(3,22,37,.30) 62%,rgba(3,22,37,.16))}
+
+/* Event management */
+.event-admin-link{margin-top:28px}
+.auth-panel{max-width:520px;margin:30px auto;text-align:center}
+.auth-lock{font-size:34px;margin-bottom:8px}
+.auth-panel form{display:flex;gap:10px;margin-top:18px}
+.auth-panel input{flex:1}
+.auth-status{color:var(--red);font-weight:700}
+.admin-head h1{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-weight:700}
+
+/* Remove accidental old phone from any remaining page fragments */
+.contact-list a[href="tel:+254727759881"]{display:none}
+
+/* Better touch targets */
+.btn{min-height:46px;border-radius:2px}
+.gallery-item{touch-action:manipulation}
+
+/* Paragraphs: justified where they are actual body copy */
+.section .lead,.section .plain-card p,.section .leader-card p,.section .contact-item,.section .ministry-intro p{
+  text-align:justify;
+  text-justify:inter-word;
+}
+.page-hero p,.hero p,.kicker,.section h2,.section h3,.role,.dept-body,.event-body,.contact-item small{
+  text-align:center;
+}
+
+/* Tablet */
+@media (max-width:1050px){
+  .navlinks>a,.navdrop>button{font-size:10.5px;padding-inline:5px}
+  .logo{flex:0 1 220px;min-width:220px}
+  .governance{grid-template-columns:repeat(2,1fr)}
+  .gov-step:not(:last-child):after{display:none}
+  .ministry-links{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Phones */
+@media (max-width:760px){
+  .navlinks{display:none}
+  .mobile-toggle{display:grid!important}
+  .mobile-menu.open{display:block}
+  .logo-title{white-space:normal}
+  .logo-sub{font-size:12px}
+  .header{box-shadow:0 2px 10px rgba(0,0,0,.08)}
+  .two-col,.leadership-two,.ministry-intro{grid-template-columns:1fr}
+  .leadership-two{max-width:620px}
+  .leader-image{height:auto;aspect-ratio:4/5}
+  .ministry-intro{gap:28px}
+  .ministry-intro .image-frame{height:auto;aspect-ratio:4/3}
+  .ministry-links{grid-template-columns:1fr}
+  .governance{grid-template-columns:1fr;gap:10px}
+  .gov-step{min-height:92px}
+  .gov-step:not(:last-child):after{display:block;content:"↓";right:auto;bottom:-19px;top:auto;left:50%;transform:translateX(-50%);font-size:18px}
+  .auth-panel form{flex-direction:column}
+  .auth-panel .btn{width:100%}
+  .hero-slide.active img{animation-duration:6.5s}
+  .section .lead,.section .plain-card p,.section .leader-card p,.section .ministry-intro p{line-height:1.72}
+}
+
+@media (max-width:480px){
+  .logo-title{font-size:10px}
+  .logo-sub{font-size:11px}
+  .ministry-links .dept{min-height:270px}
+  .scripture-card{padding:20px 16px}
+  .scripture-card p{font-size:17px}
+  .ministry-quote{font-size:16px;padding:16px}
+}
+
+/* Users who prefer reduced motion get a calm, static hero */
+@media (prefers-reduced-motion:reduce){
+  .hero-slide.active img,.hero-slide:nth-child(even).active img{animation:none;transform:none}
+}
+
+/* Aerial opening image: keep the church building in frame at all common aspect ratios. */
+.hero-slide:first-child img{object-position:center 78%}
+@media (max-width:760px){.hero-slide:first-child img{object-position:center 76%}}
+@media (max-width:480px){.hero-slide:first-child img{object-position:center 73%}}
+
+
+/* RPC FINAL OWNER REVIEW — permanent navigation */
+:root{--nav-h:82px;--topbar-h:32px}
+.topbar{position:fixed;left:0;right:0;top:0;z-index:1200;height:var(--topbar-h)}
+.header{position:fixed!important;left:0;right:0;top:var(--topbar-h)!important;z-index:1100}
+body{padding-top:calc(var(--topbar-h) + var(--nav-h))}
+.nav{min-height:var(--nav-h)}
+.navlinks>a,.navdrop>button,.nav-cta{white-space:nowrap;word-break:keep-all;overflow-wrap:normal}
+.hero-brand{font-size:1.02em;font-weight:900;letter-spacing:.02em;color:#fff!important}.hero-brand .brand-blue,.hero-brand .brand-red{color:#fff!important}
+.hero-brand .brand-blue{color:#0072BD}.hero-brand .brand-red{color:#EC1C24}
+/* Make governance unmistakably important */
+.governance-section{border-top:1px solid #d9e4ec;border-bottom:1px solid #d9e4ec}
+.governance{max-width:1040px;margin:38px auto 0;grid-template-columns:repeat(4,1fr);gap:0;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.gov-step{min-height:145px;border:1px solid #cbd9e3;border-radius:0;background:#fff;padding:28px 16px}
+.gov-step span{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.12em}
+.gov-step b{font-size:16px;line-height:1.35;color:var(--blue-dark)}
+/* Real portrait: show the supplied photograph clearly and naturally */
+.leader-image{background:#f3f6f8;overflow:hidden}
+.leader-image img{width:100%;height:100%;object-fit:contain!important;object-position:center center!important}
+/* Body copy is justified; interface labels/headings remain centred */
+main p:not(.hero p):not(.page-hero p):not(.copyright p){text-align:justify;text-justify:inter-word;hyphens:none}
+.center-content p,.hero-copy p,.page-hero p,.footer p,.ministry-closing,.ministry-quote{ text-align:center!important }
+/* Ministry gallery introductions and captions */
+.ministry-gallery + *{text-align:justify}
+/* Floating WhatsApp contact */
+.rpc-whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;z-index:2000;box-shadow:0 8px 22px rgba(0,0,0,.22);font-weight:900;font-size:25px;text-decoration:none;border:3px solid #fff}
+.rpc-whatsapp:hover{transform:translateY(-2px);box-shadow:0 11px 26px rgba(0,0,0,.25)}
+.rpc-whatsapp span{font-size:11px;position:absolute;right:64px;bottom:14px;background:#fff;color:#1b6d3a;padding:5px 8px;white-space:nowrap;border-radius:3px;box-shadow:0 3px 10px rgba(0,0,0,.12);opacity:0;pointer-events:none;transition:.2s}
+.rpc-whatsapp:hover span{opacity:1}
+@media(max-width:1050px){:root{--nav-h:72px}.governance{grid-template-columns:repeat(2,1fr)}.gov-step:nth-child(1),.gov-step:nth-child(2){border-bottom:0}}
+@media(max-width:760px){:root{--topbar-h:31px;--nav-h:68px}.topbar{height:var(--topbar-h)}.header{top:var(--topbar-h)!important}.nav{min-height:var(--nav-h)}body{padding-top:calc(var(--topbar-h) + var(--nav-h))}.leader-image{aspect-ratio:4/5;height:auto}.governance{grid-template-columns:1fr;gap:0}.gov-step{min-height:105px}.gov-step:not(:last-child):after{display:block}.rpc-whatsapp{width:54px;height:54px;right:14px;bottom:14px}.rpc-whatsapp span{display:none}main p:not(.hero p):not(.page-hero p){line-height:1.72}}
+
+.gallery-intro{max-width:680px;margin-left:auto;margin-right:auto;text-align:justify!important;text-justify:inter-word}
+.rpc-whatsapp{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-size:15px;letter-spacing:-.04em;font-weight:700}
+
+/* RPC FINAL REFINEMENT: About body copy, centred ministry rows, portrait framing */
+/* Normal explanatory copy is justified; display text remains centred. */
+main p.justified,
+main p.lead.justified,
+main .plain-card p,
+main .leader-card p,
+main .ministry-intro p,
+main .ministry-gallery p,
+main .journey-wrap p,
+main .contact-item p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Keep introductory/display paragraphs centred where they are intentionally short. */
+.hero p,
+.page-hero p,
+.section-blue > .container > .lead:not(.justified),
+.section-soft > .container > .lead:not(.justified),
+.ministry-quote,
+.ministry-closing {
+  text-align: center;
+}
+
+/* Seven ministry cards: four on the first row and three centred on the second. */
+.department-links.ministry-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+}
+.department-links.ministry-links .dept {
+  flex: 0 1 calc((100% - 54px) / 4);
+  min-width: 240px;
+  max-width: 285px;
+}
+
+/* Leadership portraits: use the clean cropped source through slightly above the belt. */
+.leadership-grid .leader-image {
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #eef2f4;
+}
+.leadership-grid .leader-image img {
+  width: min(100%, 430px);
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
+}
+
+@media (max-width:1050px){
+  .department-links.ministry-links .dept {
+    flex-basis: calc((100% - 18px) / 2);
+    max-width: 330px;
+  }
+}
+
+@media (max-width:760px){
+  .department-links.ministry-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .department-links.ministry-links .dept {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+  }
+  .leadership-grid .leader-image img {
+    width: min(100%, 400px);
+  }
+}
+
+
+/* HOSTING COMPATIBILITY FIX — keep leadership cards at full intended width even when cached/legacy rules are present. */
+.leadership-two{display:grid!important;width:100%!important;max-width:1020px!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;margin-left:auto!important;margin-right:auto!important;}
+@media(max-width:760px){.leadership-two{grid-template-columns:1fr!important;max-width:620px!important;}}
+
+
+/* Homepage ministry cards: compact, icon-led navigation. */
+.department-links.ministry-icon-links{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+  max-width:1050px;
+  margin:28px auto 0;
+}
+.department-links.ministry-icon-links .ministry-icon-card{
+  min-height:185px;
+  height:185px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:18px 12px;
+  background:#fff;
+  color:var(--ink);
+  border:1px solid var(--line);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+  text-decoration:none;
+}
+.department-links.ministry-icon-links .ministry-icon-card:after{display:none}
+.department-links.ministry-icon-links .ministry-icon-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 24px rgba(7,59,92,.10);
+  border-color:#bfd2df;
+}
+.ministry-icon{
+  width:58px;
+  height:58px;
+  border-radius:16px;
+  display:grid;
+  place-items:center;
+  background:#f3f7fa;
+  border:1px solid #d9e5ec;
+  color:var(--blue);
+  margin-bottom:13px;
+}
+.ministry-icon svg{
+  width:34px;
+  height:34px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.ministry-icon-card .dept-body{position:static;z-index:auto;left:auto;right:auto;bottom:auto;text-align:center}
+.ministry-icon-card .dept-body h3{font-size:17px;line-height:1.2;margin:0 0 5px;color:var(--ink)}
+.ministry-icon-card .dept-body span{color:var(--muted);font-size:9px;line-height:1.3;letter-spacing:.09em}
+@media(max-width:900px){
+  .department-links.ministry-icon-links{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:620px){
+  .department-links.ministry-icon-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+  .department-links.ministry-icon-links .ministry-icon-card{height:165px;min-height:165px;padding:14px 8px;}
+  .ministry-icon{width:52px;height:52px;margin-bottom:10px;border-radius:14px;}
+  .ministry-icon svg{width:30px;height:30px;}
+  .ministry-icon-card .dept-body h3{font-size:15px;}
+  .ministry-icon-card .dept-body span{font-size:8px;}
+}
+
+/* Ministry galleries: rotating sequences instead of a wall of standalone photos. */
+.ministry-slideshow{position:relative;max-width:1000px;margin:30px auto 0;overflow:hidden;border:1px solid var(--line);background:#071827;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.ministry-slides{position:relative;height:min(62vw,560px);min-height:330px}
+.ministry-slide{position:absolute;inset:0;display:none;border:0;background:#071827;cursor:zoom-in}
+.ministry-slide.active{display:block}
+.ministry-slide img{width:100%;height:100%;object-fit:cover;object-position:center}
+.ministry-prev,.ministry-next{position:absolute;z-index:3;top:50%;transform:translateY(-50%);width:46px;height:46px;border:1px solid rgba(255,255,255,.55);background:rgba(7,59,92,.72);color:#fff;border-radius:50%;font-size:32px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.ministry-prev{left:18px}.ministry-next{right:18px}
+.ministry-prev:hover,.ministry-next:hover{background:rgba(7,59,92,.95)}
+.ministry-controls{position:absolute;z-index:4;left:0;right:0;bottom:17px;display:flex;justify-content:center;gap:7px}
+.ministry-dot{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}
+.ministry-dot.active{width:28px;border-radius:6px;background:#fff}
+@media(max-width:760px){
+ .department-links.ministry-icon-links .ministry-icon-card{min-height:230px;padding:28px 18px}
+ .ministry-slides{height:62vw;min-height:250px}
+ .ministry-prev,.ministry-next{width:38px;height:38px;font-size:27px}
+ .ministry-prev{left:10px}.ministry-next{right:10px}
+}
+
+
+/* Professional ministry icons: Font Awesome line/solid icon set. */
+.ministry-icon{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:#f6f8fa;
+  border:1px solid #d7e0e6;
+  color:var(--blue);
+  margin-bottom:11px;
+}
+.ministry-icon i{font-size:24px;line-height:1;}
+@media(max-width:620px){.ministry-icon{width:48px;height:48px}.ministry-icon i{font-size:21px}}
+
+/* Refined navigation and button styling */
+.topbar{font-size:11px;letter-spacing:.055em}
+.topbar .container{min-height:36px}
+.header{box-shadow:0 4px 18px rgba(7,59,92,.06)}
+.nav{min-height:76px}
+.navlinks{gap:4px;font-size:11px;letter-spacing:.06em}
+.navlinks>a,.navdrop>button{padding:12px 11px;border-radius:5px;transition:color .2s ease,background .2s ease}
+.navlinks>a:hover,.navdrop:hover>button,.navlinks .current{background:var(--soft);color:var(--blue)}
+.nav-cta{border-radius:5px!important;padding:11px 17px!important;box-shadow:0 5px 12px rgba(215,25,45,.16)}
+.nav-live{display:inline-flex;align-items:center;gap:6px}
+.menu-drop{border-radius:6px!important;overflow:hidden}
+.menu-drop a{transition:background .2s ease,color .2s ease}
+.btn{border-radius:5px;box-shadow:0 5px 12px rgba(7,59,92,.10)}
+.btn:hover{box-shadow:0 8px 16px rgba(7,59,92,.14)}
+
+.leadership-support{padding-top:64px}
+.leadership-team-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:980px;margin:32px auto 0}
+.team-photo-card{background:#fff;border:1px solid var(--line);box-shadow:0 10px 26px rgba(7,59,92,.07);text-align:left}
+.team-photo-card img{width:100%;height:300px;object-fit:cover;object-position:center}
+.team-photo-card .body{padding:20px 22px}
+.team-photo-card h3{margin:0 0 7px}
+.team-photo-card p{margin:0;color:var(--muted)}
+@media (max-width: 760px){
+ .leadership-team-photos{grid-template-columns:1fr}
+ .team-photo-card img{height:240px}
+ .navlinks{display:none}
+}
+
+/* Ministry gallery — balanced landscape presentation */
+.ministry-slideshow{width:min(800px,92vw);margin-left:auto;margin-right:auto}
+.ministry-slideshow .ministry-slides{height:450px}
+.ministry-slideshow .ministry-slide img{width:100%;height:450px;object-fit:cover;object-position:center}
+@media(max-width:768px){
+ .ministry-slideshow{width:94vw}
+ .ministry-slideshow .ministry-slides{height:360px}
+ .ministry-slideshow .ministry-slide img{height:360px}
+}
+
+/* ===== RPC NAVIGATION REDESIGN v2 ===== */
+:root{--rpc-navy:#063b59;--rpc-blue:#0879bd;--rpc-red:#e51c2a;--rpc-ink:#162631}
+.topbar{background:var(--rpc-navy);border-bottom:1px solid rgba(255,255,255,.10);font-size:11px;letter-spacing:.02em}
+.topbar .container{min-height:36px}
+.topbar a{color:#fff;font-weight:700;text-decoration:none;opacity:.95}
+.top-verse{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.top-verse i{display:inline-block;width:3px;height:3px;border-radius:50%;background:#d9eaf6}
+.header{background:rgba(255,255,255,.98);border-bottom:1px solid #e4ebef;box-shadow:0 7px 24px rgba(8,47,70,.08);backdrop-filter:blur(8px)}
+.nav{min-height:84px;gap:28px}
+.logo{min-width:285px;gap:13px}
+.logo img{width:60px;height:60px;border:0;background:transparent;padding:0}
+.logo-copy{display:flex;flex-direction:column;justify-content:center}
+.logo-title{font-size:15px;letter-spacing:.055em;line-height:1.15}
+.logo-sub{font-size:13px!important;color:var(--rpc-blue)!important;letter-spacing:.01em!important;margin-top:5px!important;text-transform:none!important;font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif!important;font-weight:400!important}
+.navlinks{flex:1;justify-content:flex-end;gap:3px;font-size:11px;letter-spacing:.055em}
+.navlinks>a,.navdrop>button{position:relative;padding:29px 10px 27px!important;border-radius:7px;font-size:11px!important;line-height:1;text-transform:uppercase;color:#26343d;transition:color .2s ease,background .2s ease}
+.navlinks>a:after,.navdrop>button:after{content:"";position:absolute;left:10px;right:10px;bottom:17px;height:2px;border-radius:2px;background:var(--rpc-blue);transform:scaleX(0);transform-origin:center;transition:transform .2s ease}
+.navlinks>a:hover,.navdrop:hover>button,.navlinks .current{color:var(--rpc-blue)!important;background:#f3f8fb}
+.navlinks>a:hover:after,.navdrop:hover>button:after,.navlinks .current:after{transform:scaleX(1)}
+.navdrop>button.current{color:var(--rpc-blue)!important;background:#f3f8fb}
+.navdrop>button .chevron{font-size:12px;margin-left:4px;position:relative;top:-1px}
+.navdrop .menu-drop{top:72px;left:0;border:1px solid #dfe8ed;border-radius:10px;min-width:220px;padding:7px;background:#fff;box-shadow:0 18px 40px rgba(8,47,70,.15)}
+.navdrop .menu-drop a{padding:11px 13px;border-radius:6px;font-size:11px;letter-spacing:.025em}
+.menu-drop a:hover{background:#f3f8fb;color:var(--rpc-blue)}
+.nav-live{display:inline-flex!important;align-items:center;gap:7px!important;color:var(--rpc-red)!important;margin-left:3px}
+.nav-live:after{background:var(--rpc-red)!important}
+.live-dot{width:7px!important;height:7px!important;box-shadow:0 0 0 4px rgba(229,28,42,.10)!important}
+.nav-cta{margin-left:7px!important;padding:12px 18px!important;border-radius:8px!important;background:var(--rpc-red)!important;color:#fff!important;box-shadow:0 7px 16px rgba(229,28,42,.20);letter-spacing:.08em!important}
+.nav-cta:after{display:none}
+.nav-cta:hover,.nav-cta.current{background:#c91623!important;color:#fff!important;transform:translateY(-1px);box-shadow:0 9px 20px rgba(229,28,42,.25)}
+.mobile-toggle{border:1px solid #dce6eb;border-radius:8px;padding:8px 11px;background:#fff;color:var(--rpc-navy);font-size:22px;line-height:1}
+.mobile-menu{box-shadow:0 15px 25px rgba(8,47,70,.10);border-top:1px solid #e6edf1}
+.mobile-menu a,.mobile-menu summary{border-radius:7px;padding:10px 12px}
+.mobile-menu a:hover,.mobile-menu summary:hover{background:#f3f8fb;color:var(--rpc-blue)}
+@media(max-width:1100px){.nav{min-height:76px}.logo{min-width:0}.logo-title{font-size:14px}.navlinks{display:none}.mobile-toggle{display:block}}
+@media(max-width:760px){.topbar .container{min-height:34px;padding:6px 0;gap:3px}.topbar .container>span:first-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:72vw}.top-verse{font-size:10px}.top-verse a{display:none}.nav{min-height:72px}.logo img{width:52px;height:52px}.logo-title{font-size:13px}.logo-sub{font-size:11px!important}.mobile-toggle{font-size:20px}}
+/* ===== END NAVIGATION REDESIGN ===== */
+
+/* Clean ministry photography */
+.ministry-intro .image-frame{height:auto;aspect-ratio:16/10;border:0;border-radius:12px;box-shadow:0 14px 35px rgba(11,44,62,.12);background:#eef3f6}
+.ministry-intro .image-frame img{object-fit:cover;object-position:center;width:100%;height:100%;border-radius:12px}
+.ministry-slideshow{width:min(860px,92vw);margin:30px auto 0;position:relative}
+.ministry-slides{aspect-ratio:16/9;overflow:hidden;border-radius:12px;box-shadow:0 16px 38px rgba(11,44,62,.13);background:#eef3f6}
+.ministry-slide{inset:0;position:absolute;opacity:0;visibility:hidden;transition:opacity .45s ease}
+.ministry-slide.active{opacity:1;visibility:visible}
+.ministry-slide img{width:100%;height:100%;object-fit:cover;object-position:center}
+.ministry-prev,.ministry-next{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid rgba(255,255,255,.72);border-radius:50%;background:rgba(7,48,72,.72);color:#fff;font-size:26px;line-height:1;cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(5px)}
+.ministry-prev{left:14px}.ministry-next{right:14px}
+.ministry-prev:hover,.ministry-next:hover{background:var(--rpc-red)}
+.ministry-controls{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:7px}
+.ministry-dot{width:8px;height:8px;border:0;border-radius:50%;padding:0;background:rgba(255,255,255,.7);cursor:pointer}.ministry-dot.active{width:24px;border-radius:8px;background:#fff}
+@media(max-width:760px){.ministry-intro{grid-template-columns:1fr;gap:30px}.ministry-intro .image-frame{aspect-ratio:16/10}.ministry-slideshow{width:min(94vw,700px)}}
+
+
+/* ===== RPC MINISTRY PHOTO & WATERMARK REFINEMENT ===== */
+.ministry-intro{position:relative;isolation:isolate}
+.ministry-intro:after{
+  content:"";position:absolute;inset:8% 24%;z-index:-1;pointer-events:none;
+  background:url("assets/logo.jpeg") center/260px auto no-repeat;
+  opacity:.035;filter:grayscale(1);
+}
+.ministry-intro .image-frame{aspect-ratio:3/2!important;height:auto!important;min-height:0;overflow:hidden}
+.ministry-intro .image-frame img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.ministry-slideshow{width:min(900px,92vw)!important}
+.ministry-slides{position:relative!important;aspect-ratio:3/2!important;height:auto!important;min-height:0!important;overflow:hidden;border-radius:12px;background:#eef3f6}
+.ministry-slide{display:block!important;opacity:0;visibility:hidden;z-index:0;transform:scale(1.018);transition:opacity .8s ease,transform 5.2s ease,visibility 0s linear .8s!important}
+.ministry-slide.active{opacity:1;visibility:visible;z-index:1;transform:scale(1);transition:opacity .8s ease,transform 5.2s ease,visibility 0s linear 0s!important}
+.ministry-slide img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important;display:block}
+.ministry-prev,.ministry-next{z-index:5}
+.ministry-controls{z-index:6}
+@media(max-width:760px){
+  .ministry-intro .image-frame{aspect-ratio:3/2!important}
+  .ministry-slideshow{width:calc(100vw - 28px)!important;max-width:none!important}
+  .ministry-slides{aspect-ratio:3/2!important}
+  .ministry-prev,.ministry-next{width:38px;height:38px;font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ministry-slide,.ministry-slide.active{transition:opacity .25s ease,visibility 0s linear 0s!important;transform:none!important}
+}
+
+.responsibility-list{margin:1rem 0;line-height:1.7;text-align:justify}.responsibility-list strong{color:#0072BD}
+
+
+/* RPC v12 refinement: natural typography and footer alignment */
+main .kicker { color:#555b61; }
+main .role { color:#555b61; }
+main .section h2, main .section h3 { color:#252a2e; }
+main .lead, main .section p { color:#4b535a; }
+main .section-blue .plain-card, main .section-soft .plain-card { color:#252a2e; }
+.gov-step b { color:#252a2e; }
+.footer-address { text-align:center !important; line-height:1.75; margin-left:auto; margin-right:auto; }
+.footer-grid > div:first-child { text-align:center; }
+.footer-logo { justify-content:center; }
+.footer-logo p, .footer-logo h3 { text-align:center; }
+.team-photo-card .body p { text-align:justify; text-justify:inter-word; hyphens:none; }
+
+
+/* ==========================================================
+   RPC v13 — Owner Review: responsive typography, services,
+   contact form, small ministry cards, clean footer and logos.
+   ========================================================== */
+@font-face{
+  font-family:"Edmondsans";
+  src:url("https://db.onlinewebfonts.com/t/12cc1fc37fc2f0a97ab4360efa4994f2.woff2") format("woff2");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:"Edmondsans";
+  src:url("https://db.onlinewebfonts.com/t/4a3a6523c2e50bc2a8de4445564c1cc1.woff2") format("woff2");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+:root{--rpc-blue:#0072BD;--rpc-red:#EC1C24;--rpc-ink:#25313A;--rpc-muted:#59656D}
+html,body{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;line-height:1.6}
+body{font-weight:400}
+h1,h2,h3,h4,h5,h6,.kicker,.role,.btn,.navlinks a,.navdrop>button,.nav-cta,.dept-body h3,.service-card h3,.footer h3,.logo-title,.footer-brand-copy h3{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-weight:700}
+p,span,li,small,label,input,textarea,button,.lead,.footer p,.dept-body span,.service-row,.contact-item{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;font-weight:400}
+/* Do not insert typographic hyphens into ordinary website copy. */
+main p,main li,.footer p,.contact-item,.lead,.responsibility-list{hyphens:none!important;word-break:normal;overflow-wrap:break-word}
+/* Brand logo is always borderless. */
+.logo,.logo img,.footer-logo,.footer-logo img,img[src*="logo"],img[alt*="RPC logo"]{border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important}
+.logo img,.footer-logo img{padding:0!important}
+/* Compact homepage ministry cards. */
+.department-links.ministry-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:980px;margin:26px auto 0}
+.department-links.ministry-links .ministry-icon-card{flex:0 1 128px;min-width:118px;max-width:132px;height:138px;min-height:138px;padding:13px 8px;border-radius:4px}
+.ministry-icon-card .ministry-icon{width:44px;height:44px;margin-bottom:9px}
+.ministry-icon-card .ministry-icon i{font-size:20px}
+.ministry-icon-card .dept-body{position:static;left:auto;right:auto;bottom:auto}
+.ministry-icon-card .dept-body h3{font-size:13px;line-height:1.15;margin:0 0 4px;white-space:normal}
+.ministry-icon-card .dept-body span{font-size:7.5px;line-height:1.25;letter-spacing:.04em;display:block}
+@media(max-width:1050px){.department-links.ministry-links .ministry-icon-card{flex-basis:122px;min-width:116px;max-width:128px;height:132px;min-height:132px}}
+@media(max-width:760px){.department-links.ministry-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:330px;gap:10px}.department-links.ministry-links .ministry-icon-card{width:100%;max-width:none;min-width:0;height:128px;min-height:128px}.ministry-icon-card .dept-body h3{font-size:12.5px}.ministry-icon-card .dept-body span{font-size:7.5px}}
+@media(max-width:380px){.department-links.ministry-links{max-width:280px}.department-links.ministry-links .ministry-icon-card{height:122px;min-height:122px}}
+/* Service schedule */
+.services-section{background:#f5f8fa}
+.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:980px;margin:30px auto 0;text-align:left}
+.service-card{background:#fff;border:1px solid #d9e2e8;padding:24px;box-shadow:0 8px 24px rgba(7,59,92,.06)}
+.service-card h3{font-size:20px;color:var(--rpc-blue);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--rpc-red)}
+.service-row{display:flex;justify-content:space-between;gap:20px;padding:10px 0;border-bottom:1px solid #edf1f3;font-size:14px;color:#3e4b54}
+.service-row:last-child{border-bottom:0}
+.service-row b{font-weight:400;text-align:right;color:#26343d}
+@media(max-width:760px){
+  .services-grid{
+    display:block;
+    width:min(100%,430px);
+    max-width:430px;
+    margin:30px auto 0;
+  }
+  .service-card{
+    margin:0;
+    border-radius:0;
+    box-shadow:none;
+    padding:22px 24px;
+  }
+  .service-card:first-child{
+    border-radius:6px 6px 0 0;
+    border-bottom:0;
+  }
+  .service-card:last-child{
+    border-radius:0 0 6px 6px;
+    border-top:1px solid #d9e2e8;
+  }
+  .service-card h3{
+    text-align:center;
+  }
+  .service-row{flex-direction:column;gap:2px}
+  .service-row b{text-align:left}
+}
+/* Homepage Map button section */
+.location-section .btn{margin-top:6px;min-width:130px}
+/* Footer — three stable columns, split title/motto. */
+.footer{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif;text-align:center}
+.footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr);gap:48px;align-items:start}
+.footer-grid>div{min-width:0}
+.footer-logo{display:flex;align-items:flex-start;justify-content:center;gap:14px;text-align:left}
+.footer-logo img{width:62px;height:62px;flex:0 0 62px;object-fit:contain}
+.footer-brand-copy{min-width:0}
+.footer-brand-copy h3{font-size:20px;line-height:1.2;margin:0;font-weight:700;color:#fff;white-space:normal}
+.footer-brand-copy .footer-motto{margin:4px 0 5px;color:#d8e3e9;font-size:13px;line-height:1.35;font-weight:400}
+.footer-address{text-align:center!important;line-height:1.65;margin:18px auto 0!important;white-space:normal}
+.footer-grid>div:not(:first-child) h3{text-align:center}
+.footer-socials{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:14px}
+.social-placeholder{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,.28);padding:8px 11px;border-radius:3px;color:#dbe5eb!important;font-size:11px;line-height:1}
+.social-placeholder small{font-size:8px;color:#9fb0ba}
+.copyright{align-items:center}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr;gap:32px}.footer-logo{justify-content:center;text-align:center}.footer-brand-copy{text-align:center}.footer-address{max-width:300px}.footer-grid>div{width:100%}}
+/* Leadership content: two equal columns on desktop, clean vertical stack on mobile. */
+.leadership-team-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:1050px;margin:32px auto 0}
+.team-photo-card{min-width:0;background:#fff;border:1px solid #d9e2e8;overflow:hidden}
+.team-photo-card>img{display:block;width:100%;height:260px;object-fit:cover;object-position:center top}
+.team-photo-card .body{padding:24px}
+.team-photo-card .body p{line-height:1.6;margin:0 0 16px}
+.responsibility-list{font-size:15px;line-height:1.6;color:#46535b;text-align:left;margin:18px 0}
+.responsibility-list strong{display:block;color:var(--rpc-blue);font-weight:700;margin-top:12px;margin-bottom:3px}
+@media(max-width:760px){.leadership-team-photos{grid-template-columns:1fr;gap:18px}.team-photo-card>img{height:auto;aspect-ratio:16/10}.team-photo-card .body{padding:20px}}
+/* Contact page */
+.contact-modern{background:#f7f9fb}
+.contact-intro{max-width:760px;margin:0 auto 32px}
+.contact-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;max-width:1100px;margin:0 auto}
+.contact-panel,.contact-map,.contact-form-wrap{background:#fff;border:1px solid #d9e2e8;padding:26px;box-shadow:0 8px 24px rgba(7,59,92,.05)}
+.contact-panel h3{margin:0 0 12px;font-size:24px}
+.contact-map .map-wrap{height:100%;min-height:380px;margin:0;border:0}
+.contact-form-wrap{max-width:1100px;margin:28px auto 0}
+.contact-form-wrap h2{margin-bottom:7px}
+.form-note{color:var(--rpc-muted);margin:0 0 22px}
+.rpc-contact-form{display:grid;gap:16px;max-width:760px;margin:0 auto;text-align:left}
+.form-field{display:grid;gap:7px}
+.form-field label{font-size:13px;font-weight:700;color:#34424b}
+.form-field input,.form-field textarea{width:100%;border:1px solid #cbd7de;border-radius:3px;background:#fff;color:#26343d;padding:12px 13px;font:inherit;line-height:1.5;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-field textarea{resize:vertical;min-height:160px}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--rpc-blue);box-shadow:0 0 0 3px rgba(0,114,189,.10)}
+.form-field.invalid input,.form-field.invalid textarea{border-color:var(--rpc-red)}
+.field-error{min-height:16px;font-size:12px;color:var(--rpc-red)}
+.rpc-contact-form>.btn{justify-self:start}
+.form-status{min-height:20px;margin:0;color:#58656e}
+.honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
+.contact-socials{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.btn-outline-dark{border:1px solid #9aaab4;color:#26343d;background:#fff}
+.btn-outline-dark small{font-size:9px;margin-left:3px;color:#7b8991}
+.contact-overlay{position:fixed;inset:0;z-index:3000;background:rgba(4,19,30,.68);display:grid;place-items:center;padding:20px}
+.contact-overlay[hidden]{display:none}
+.contact-success-card{position:relative;width:min(500px,100%);background:#fff;padding:38px 30px;text-align:center;box-shadow:0 20px 55px rgba(0,0,0,.25)}
+.contact-success-card h2{margin:8px 0 8px}
+.contact-success-card p{color:#55626a;line-height:1.65;margin:0 auto 22px;max-width:400px}
+.success-mark{width:56px;height:56px;margin:0 auto;border-radius:50%;display:grid;place-items:center;background:#eaf6ef;color:#17834b;font-size:28px;font-weight:700}
+.contact-overlay-close{position:absolute;right:12px;top:8px;border:0;background:none;font-size:30px;color:#63717a;cursor:pointer}
+@media(max-width:760px){.contact-layout{grid-template-columns:1fr}.contact-map .map-wrap{min-height:300px;height:300px}.contact-panel,.contact-map,.contact-form-wrap{padding:20px}.contact-socials{justify-content:center}.rpc-contact-form>.btn{justify-self:stretch}}
+/* No forced word splitting anywhere in normal UI copy. */
+.navlinks a,.navdrop>button,.logo-title,.logo-sub,.footer-brand-copy h3{overflow-wrap:normal;word-break:normal}
+/* Edmondsans weight discipline: bold is reserved for headings, titles and explicit section labels. */
+.btn,.navlinks>a,.navdrop>button,.nav-cta,.nav-live,.mobile-menu a,.mobile-menu summary,.social-placeholder{font-weight:400!important}
+
+
+/* ==========================================================
+   RPC v14 — Clean footer and unified Edmondsans typography
+   ========================================================== */
+.footer-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.footer-brand{text-align:center;min-width:0}
+.footer-brand h3{margin:0 0 5px;font-size:22px;line-height:1.25;font-weight:700;color:#fff}
+.footer-brand .footer-motto{margin:0 0 8px;font-size:13px;line-height:1.35;color:#d8e3e9;font-weight:400}
+.footer-brand>p:not(.footer-motto):not(.footer-address){margin:0;color:#dbe5eb;font-size:14px}
+.footer-address{max-width:270px;margin:18px auto 0!important;text-align:center!important;line-height:1.7;color:#b7c5cd!important}
+.footer-grid>div:not(.footer-brand) h3{text-align:center;margin:0 0 14px}
+.footer-grid>div:not(.footer-brand) p{text-align:center}
+.footer-socials{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:16px}
+.social-placeholder{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.28);padding:8px 12px;border-radius:3px;color:#dbe5eb!important;font-size:11px;line-height:1;text-decoration:none}
+.social-disabled{cursor:default;opacity:.9}
+.footer-logo{display:block}
+.footer-logo img{display:none!important}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr;gap:30px}.footer-brand,.footer-grid>div:not(.footer-brand){width:100%}.footer-grid>div:not(.footer-brand) p{text-align:center}.footer-brand h3{font-size:20px}}
+
+/* Edmondsans is the single site text family. Font Awesome icons keep their icon font. */
+body, body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body span, body small, body strong, body b, body em, body i:not(.fa-solid):not(.fa-brands), body li, body label, body input, body textarea, body button, body summary, body th, body td, body div, body section, body article, body nav, body footer, body header{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif}
+body{font-weight:400}
+h1,h2,h3,h4,h5,h6,.kicker,.role,.footer h3,.logo-title,.footer-brand h3,.ministry-closing{font-weight:700}
+p,span,li,small,label,input,textarea,button,.lead,.footer p,.dept-body span,.service-row,.contact-item,.footer-motto{font-weight:400}
+
+
+/* ==========================================================
+   RPC v16 — Social media menu, giving options and mobile form
+   ========================================================== */
+.footer-socials{position:relative;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:16px}
+.social-menu{position:relative;display:inline-block}
+.social-menu summary{list-style:none;cursor:pointer;user-select:none}
+.social-menu summary::-webkit-details-marker{display:none}
+.social-menu summary:after{content:" ▾";font-size:9px;opacity:.8}
+.social-menu[open] summary:after{content:" ▴"}
+.social-menu-links{position:absolute;left:50%;bottom:calc(100% + 9px);transform:translateX(-50%);display:grid;min-width:150px;padding:7px;background:#fff;border:1px solid #d4dee5;box-shadow:0 10px 25px rgba(4,19,30,.15);z-index:50;text-align:left}
+.social-menu-links a{display:block;padding:9px 11px;color:#26343d!important;text-decoration:none;font-size:12px;line-height:1.25;font-weight:400!important}
+.social-menu-links a:hover{background:#eef5fa;color:var(--blue)!important}
+.contact-social-menu .social-menu-links{bottom:auto;top:calc(100% + 9px);left:0;transform:none}
+.contact-socials{position:relative;display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.payment-options{max-width:650px}
+.payment-option{padding:0}
+.payment-option + .payment-option{border-top:2px solid #e8eef2;margin-top:5px;padding-top:5px}
+.payment-option h3{font-size:18px;color:var(--blue);margin:18px 24px 2px;text-align:center}
+.payment-option:first-child h3{margin-top:18px}
+@media(max-width:760px){
+  .social-menu-links{min-width:145px}
+  .payment-option h3{margin-left:15px;margin-right:15px;font-size:17px}
+}
+
+/* RPC v17 — reliable mobile contact-form touch target */
+.contact-form-wrap{position:relative;z-index:3}
+.rpc-contact-form>.btn{position:relative;z-index:10;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:rgba(236,28,36,.18);cursor:pointer}
+.rpc-contact-form>.btn:disabled{cursor:wait;opacity:.75}
+@media(max-width:760px){.rpc-contact-form>.btn{min-height:54px;width:100%;display:flex;align-items:center;justify-content:center}}
+
+/* ===== V19 LEADERSHIP SUPPORT PRESENTATION FIX ===== */
+/* Preserve the complete supplied team photograph instead of cropping people at the chest. */
+.team-photo-card img{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+  background:#fff;
+}
+
+/* Keep both desktop leadership cards visually balanced without changing their wording. */
+.team-photo-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.team-photo-card .body{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.team-photo-card .body > p{
+  min-height:74px;
+}
+.responsibility-list{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex:1;
+  gap:18px;
+  margin-top:18px;
+}
+.responsibility-item{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+.responsibility-item strong{
+  display:block;
+  color:var(--blue,#0879bd);
+  font-weight:700;
+}
+.responsibility-item span{
+  display:block;
+  line-height:1.55;
+}
+@media(max-width:760px){
+  .team-photo-card .body > p{min-height:0}
+  .responsibility-list{gap:18px}
+}
+
+
+/* RPC v20 — Leadership support: clean paragraph presentation */
+.responsibility-paragraphs{margin:1rem 0 0;text-align:justify;line-height:1.7}
+.responsibility-paragraphs p{margin:0 0 14px!important;color:#4b535a!important;font-weight:400!important}
+.responsibility-paragraphs strong{color:#252a2e!important;font-weight:700!important}
+.responsibility-paragraphs p:last-child{margin-bottom:0!important}
+
+
+/* V22: supplied ministry thumbnails and social links on the Live page */
+.ministry-icon-card.ministry-thumbnail-card{gap:6px;padding-top:8px;padding-bottom:8px}
+.ministry-card-thumbnail{display:block;width:100%;height:68px;object-fit:cover;object-position:center;border-radius:3px}
+.ministry-thumbnail-card .dept-body h3{font-size:12px;margin:1px 0 3px}
+.ministry-thumbnail-card .dept-body span{font-size:7.5px}
+.live-social-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+.live-social-grid .facebook-box{height:100%;box-sizing:border-box}
+@media(max-width:760px){.ministry-card-thumbnail{height:72px}.live-social-grid{grid-template-columns:1fr;gap:12px}}
+
+
+/* Final homepage refinements: visible bold brand and responsive AGAPE values */
+.topbar .container > span:first-child strong{font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif!important;font-weight:700!important;font-size:inherit;letter-spacing:.01em}
+.core-values-section{background:#fff}
+.agape-list{width:min(100%,620px);margin:28px auto 0;text-align:left;border:1px solid var(--line);background:#fff;box-shadow:0 8px 24px rgba(14,47,68,.06)}
+.agape-item{display:flex;align-items:center;gap:18px;padding:14px 24px;border-bottom:1px solid var(--line);min-height:58px}
+.agape-item:last-child{border-bottom:0}
+.agape-item b{display:inline-grid;place-items:center;flex:0 0 38px;height:38px;border-radius:50%;background:#eaf3fa;color:var(--blue);font-size:21px;font-weight:700}
+.agape-item span{font-size:16px;font-weight:700;letter-spacing:.06em;color:var(--ink)}
+@media(max-width:600px){.agape-list{max-width:100%;margin-top:22px}.agape-item{padding:12px 16px;gap:14px;min-height:54px}.agape-item b{flex-basis:34px;height:34px;font-size:19px}.agape-item span{font-size:14px;letter-spacing:.04em}}
+
+
+/* V24: tighten the homepage transition between Welcome and Core Values. */
+.welcome-section{padding-bottom:28px!important}
+.core-values-section{padding-top:28px!important}
+@media(max-width:760px){
+  .welcome-section{padding-top:42px!important;padding-bottom:20px!important}
+  .core-values-section{padding-top:20px!important}
+}
+
+
+/* V25 final branding refinements */
+.logo-title{font-weight:800!important;font-family:"Edmondsans",system-ui,-apple-system,"Segoe UI",Arial,Helvetica,sans-serif!important;color:#0072BD!important;}
+.logo-title .brand-blue,.logo-title .brand-red{font-weight:800!important;}
+.logo img,.logo,.footer-logo img,.footer-logo{border:0!important;outline:0!important;box-shadow:none!important;background:#fff!important;}
+.topbar .container>span:first-child strong{font-weight:800!important;}
+
+
+/* RPC clean transparent logo extracted from the supplied brand PDF */
+.logo img{width:68px;height:50px;object-fit:contain;flex:0 0 68px;border:0;background:transparent;padding:0}
+@media(max-width:600px){.logo img{width:56px;height:44px;flex-basis:56px}}
+
+/* Contact form launch fix: keep submit control interactive on desktop and touch devices. */
+.rpc-contact-form{position:relative;z-index:5}
+.rpc-contact-form>.btn{display:inline-flex;align-items:center;justify-content:center;position:relative;z-index:20;pointer-events:auto;cursor:pointer;touch-action:manipulation;min-height:48px}
+.rpc-contact-form>.btn:focus-visible{outline:3px solid rgba(0,114,189,.35);outline-offset:3px}

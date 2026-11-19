@@ -1,0 +1,28 @@
+RPC WEBSITE — DEVICE & CLIENT REVIEW BUILD
+=============================================
+
+This build is a static, hard-coded HTML/CSS/JavaScript website.
+
+Responsive targets:
+- Small phones: 360px+
+- Phones: 375–430px
+- Tablets: 768–1024px
+- Laptops/desktops: 1100px+
+- Wide screens: up to 1920px+
+
+Navigation:
+- Desktop navigation remains visible while scrolling.
+- Mobile navigation switches to a touch-friendly menu.
+- Ministry links are available from the Ministries menu.
+
+Brand:
+- Signal Blue: #0072BD
+- RPC Red: #EC1C24
+
+Events:
+- The Events Management page is protected by the client-review password.
+- Events are stored in browser localStorage in this static prototype.
+- Production deployment should replace this with server-side authentication/database storage.
+
+Favicon:
+- assets/rpc-favicon.png is the RPC logo used for browser tabs/bookmarks.
